@@ -1,0 +1,254 @@
+{
+    "window.menuBarVisibility": "compact",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName} 😄Keep Learning😊",
+    "editor.accessibilitySupport": "off",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.fontFamily": "'Cascadia Code'",
+    "editor.fontLigatures": "'calt', 'ss01', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'zero', 'onum'",
+    "editor.guides.bracketPairs": false,
+    "editor.guides.indentation": false,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.inlineSuggest.enabled": true,
+    "editor.largeFileOptimizations": false,
+    "editor.linkedEditing": true,
+    "editor.multiCursorModifier": "alt",
+    "editor.stickyScroll.enabled": true,
+    "editor.suggestSelection": "first",
+    "editor.wordWrap": "off",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "entity.name.type.class", //class names
+                    "keyword", //import, export, return…
+                    "support.class.builtin.js", //String, Number, Boolean…, this, super
+                    "storage.modifier", //static keyword
+                    "storage.type.class.js", //class keyword
+                    "storage.type.function.js", // function keyword
+                    "storage.type.js", // Variable declarations
+                    "keyword.control.import.js", // Imports
+                    "keyword.control.from.js", // From-Keyword
+                    "entity.name.type.js", // new … Expression
+                    "keyword.control.flow.js", // await
+                    "keyword.control.conditional.js", // if
+                    "keyword.control.loop.js", // for
+                    "keyword.operator.new.js" // new
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "invalid",
+                    "keyword.operator",
+                    "constant.numeric.css",
+                    "keyword.other.unit.px.css",
+                    "constant.numeric.decimal.js",
+                    "constant.numeric.json",
+                    "entity.name.type.class.js"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "workbench.colorTheme": "Default Dark+ Experimental",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.list.horizontalScrolling": true,
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "zenMode.hideTabs": false,
+    "zenMode.restore": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "todo-tree.filtering.excludeGlobs": [
+        "**/vendor",
+        "**/node_modules",
+        "**/dist",
+        "**/bower_components",
+        "**/build",
+        "**/.vscode",
+        "**/.github",
+        "**/_output",
+        "**/*.min.*",
+        "**/*.map",
+        "**/*.txt",
+        "**/CommonContent"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "foreground": "#000000",
+            "background": "#00FF00",
+            "iconColour": "#00FF00",
+            "icon": "check",
+            "type": "text"
+        },
+        "FIXME": {
+            "foreground": "#000000",
+            "background": "#FF0000",
+            "iconColour": "#FF0000",
+            "icon": "bug"
+        },
+        "REVIEW": {
+            "foreground": "#000000",
+            "background": "#00FFFF",
+            "iconColour": "#00FFFF",
+            "icon": "eye"
+        },
+        "HACK": {
+            "foreground": "#000000",
+            "background": "#FFA500",
+            "iconColour": "#FFA500",
+            "icon": "alert"
+        },
+        "REF": {
+            "foreground": "#000000",
+            "background": "#808080",
+            "iconColour": "#808080",
+            "icon": "link",
+            "type": "tag"
+        },
+        "WARN": {
+            "foreground": "#FFFFFF",
+            "background": "#FF0000",
+            "iconColour": "#FF0000",
+            "icon": "alert",
+            "type": "text"
+        },
+        "NOTE": {
+            "background": "#FFA500",
+            "iconColour": "#FFA500",
+            "icon": "file"
+        },
+        "MARK": {
+            "background": "#157EFB",
+            "iconColour": "#157EFB",
+            "icon": "tag"
+        },
+        "[ ]": {
+            "background": "#FF000080",
+            "iconColour": "#FF000080",
+            "icon": "square"
+        },
+        "[x]": {
+            "background": "#00FF0080",
+            "iconColour": "#00FF0080",
+            "icon": "square-fill"
+        }
+    },
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "REVIEW",
+        "HACK",
+        "REF",
+        "WARN",
+        "NOTE",
+        "MARK",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.general.tagGroups": {
+        "FIXME": [
+            "FIXME",
+            "FIXIT",
+            "FIX",
+            "FIXTHIS",
+            "FIX!",
+            "NEEDSFIX",
+            "FIXNOW",
+            "MUSTFIX"
+        ],
+        "TODO": [
+            "TODO",
+            "TO-DO",
+            "NEEDSWORK",
+            "DOTHIS",
+            "WILLDO"
+        ],
+        "BUG": [
+            "BUG",
+            "FOUNDBUG",
+            "ISBUG",
+            "BUGFIX",
+            "ISBUGFIX",
+            "XXX"
+        ],
+        "NOTE": [
+            "NOTE",
+            "REMINDER",
+            "CHECK",
+            "HACK"
+        ],
+        "[x]": [
+            "[x]",
+            "[X]"
+        ]
+    },
+    "todo-tree.highlights.defaultHighlight": {
+        "type": "tag-and-subTag"
+    },
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2,
+        "files.eol": "\n"
+    },
+    "blockhighlight.background": [
+        "150",
+        "150",
+        "150",
+        ".05"
+    ],
+    "breadcrumbs.filePath": "last",
+    "cSpell.language": "en,en-US,en-GB",
+    "cSpell.userWords": [
+        "blockhighlight",
+        "Jaimin",
+        "swal"
+    ],
+    "diffEditor.wordWrap": "off",
+    "docwriter.hotkey.windows": "Alt + .",
+    "extensions.ignoreRecommendations": false,
+    "html.format.wrapLineLength": 0,
+    "thunder-client.codeSnippetLanguage": "cs-httpclient",
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.colorCustomizations": {},
+    "mssql.connections": [
+        {
+            "server": ".\\SQLExpress",
+            "database": "",
+            "authenticationType": "SqlLogin",
+            "user": "sa",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "encrypt": "Mandatory",
+            "trustServerCertificate": true,
+            "connectTimeout": 15,
+            "commandTimeout": 30,
+            "applicationName": "vscode-mssql"
+        }
+    ],
+    "editor.cursorBlinking": "expand",
+    "mssql.objectExplorer.groupBySchema": false,
+    "workbench.editor.enablePreview": false
+}
